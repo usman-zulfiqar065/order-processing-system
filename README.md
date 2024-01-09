@@ -1,24 +1,29 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Order Processing System
 
-Things you may want to cover:
+## Code Features
+  1. It contains two models (user and order), There is a required scope in order model to fetch all completed buy orders
+  2. There is a method 'process_order' in order model to update order status
+  3. There is a method (Query) in user model to get total quantity of completed orders for that specified user
+  4. There are two test files for both Models to test the functionality 
 
-* Ruby version
+## Getting Started
 
-* System dependencies
+These instructions will help you set up the project and run the tests on your local machine.
 
-* Configuration
+### Prerequisites
 
-* Database creation
+- Ruby (version 3.2.2)
+- Rails (version 7.0.8)
+- Bundler
 
-* Database initialization
+### Installing Dependencies
 
-* How to run the test suite
+Install the required gems using Bundler:
 
-* Services (job queues, cache servers, search engines, etc.)
+```bash
+bundle install
+```
 
-* Deployment instructions
-
-* ...
+### Run rspec to run test cases
